@@ -9,7 +9,7 @@ body{
 }
 #nav-header{
     background-color: brown;
-    width: 100%;
+    width: 100%;;
     display: flex;
     justify-content: flex-end;
     position: fixed;gh
@@ -22,6 +22,7 @@ body{
     justify-content: space-around;
     list-style: none;
     width: 25%;
+    height: max-content;
     margin-right: 3%;
 }
 
@@ -58,23 +59,59 @@ body{
     font-size: 1.8rem;
 }
 
-#projects{  
-    padding: 10rem 2rem;
+.project-sections{  
+    padding: 8rem 2rem;
     text-align: center;
     background-color: #45567d;
 }
 #projects-header{
     border-bottom:2px solid azure;
+    max-width: 650px;
+    margin: 0 auto 6rem auto;
+}
+
+.projects{
+    box-shadow: 0px 0px 0px #3a3d40;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
 }
 
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    margin-top: 6rem;
     margin-bottom: 6rem;
 }
-.project-grid img{
+
+.project-image{
+    width: 100%;
+    object-fit: contain;
+}
+
+.project-name{
+    background-color: #181719;
+    color: azure;
+    height: 15%;
+    text-align: center;
+    margin-top: 0%;
+}
+
+#show-button{
+    width: auto;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    color: aliceblue;
+    background-color: #3a3d40;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#show-button:hover {
+    background-color: brown;
 }
